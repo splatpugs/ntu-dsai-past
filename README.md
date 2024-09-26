@@ -109,3 +109,4 @@ In total, Singapore has won 5 Olympic medals:
 - To enhance Olympic performance, Singapore may benefit from strategies that focus on identifying and developing talent across a broader range of sports.
 
 ##### Last Updated: Thursday, 26th September 2024
+##### Since this project was done in the past, I need more time to upload more visualisation for analysis of height & weight.
