@@ -38,6 +38,6 @@ During the data cleaning process, I also identified that the **NOC (National Oly
    - Merged the **athlete dataset**, **GDP dataset**, and **population dataset** to create a unified dataset.
    - This allowed for further analysis, including economic and demographic factors alongside Olympic data.
 
-# Summary of Findings
+## Summary of Findings
 
-# What’s Next?
+##### Last Updated: Thursday, 26th September 2024
