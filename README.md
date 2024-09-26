@@ -13,7 +13,7 @@ For example, based on the plot, I conducted the analysis from 1960 onwards, due 
 
 During the data cleaning process, I also identified that the **NOC (National Olympic Committee)** tags for some athletes were still inaccurate. Specifically, **Singapore** was not correctly associated with its respective region.
 
-### Steps to Resolve:
+## Steps to Resolve (Data Cleaning)
 1. **Import the `noc_regions.csv` Dataset**:
    - The `noc_regions.csv` dataset contains the correct NOC tags and corresponding country names.
      
@@ -26,7 +26,8 @@ During the data cleaning process, I also identified that the **NOC (National Oly
    - This step is crucial since our analysis involves factors such as height and weight.
    - This can be done using .mean()
 
-### To further enhance the analysis, additional datasets were incorporated:
+## Additional Datasets
+To further enhance the analysis, additional datasets were incorporated:
 
 1. **Import World GDP Dataset**:
    - Brought in the global GDP dataset for countries from 1961 onwards.
