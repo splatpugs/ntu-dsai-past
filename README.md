@@ -15,16 +15,16 @@ During the data cleaning process, I also identified that the **NOC (National Oly
 
 ## Steps to Resolve (Data Cleaning)
 1. **Import the `noc_regions.csv` Dataset**:
-   - The `noc_regions.csv` dataset contains the correct NOC tags and corresponding country names.
+   - The **`noc_regions.csv`** dataset contains the correct NOC tags and corresponding country names.
      
 2. **Merge Datasets**:
-   - Performed a merge between the athlete dataset and `noc_regions.csv` to verify and update the NOC tags.
+   - Performed a merge between the athlete dataset and **`noc_regions.csv`** to verify and update the NOC tags.
    - After merging, the data was re-examined to confirm the accuracy of the NOC tags for all athletes.
    - This step ensures that the correct **NOC** was associated with its respective **country/region**, resolving issues such as the incorrect association of countries.
 
 3. **Fill Missing Height & Weight Values**:
    - This step is crucial since our analysis involves factors such as height and weight.
-   - This can be done using .mean()
+   - This can be done using **.mean()**
 
 ## Additional Datasets
 To further enhance the analysis, additional datasets were incorporated:
