@@ -9,9 +9,7 @@ Using plots, to determine the range of years to be used for analysis & visualiza
 
 ![plot of missing data](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/plot1.png)
  
-For example, based on the plot, I conducted the analysis from 1960 onwards, due to data for height, weight and age missing from the dataset < 1960. I consider this as “bad data points”.
-
-During the data cleaning process, I also identified that the **NOC (National Olympic Committee)** tags for some athletes were still inaccurate. Specifically, **Singapore** was not correctly associated with its respective region.
+For example, based on the plot, I conducted the analysis from 1960 onwards, due to data for height, weight and age missing from the dataset < 1960. I consider this as “bad data points”. During the data cleaning process, I also identified that the **NOC (National Olympic Committee)** tags for some athletes were still inaccurate. Specifically, **Singapore** was not correctly associated with its respective region.
 
 ## Steps to Resolve (Data Cleaning)
 1. **Import the `noc_regions.csv` Dataset**:
@@ -39,36 +37,45 @@ To further enhance the analysis, additional datasets were incorporated:
    - Merged the **athlete dataset**, **GDP dataset**, and **population dataset** to create a unified dataset.
    - This allowed for further analysis, including economic and demographic factors alongside Olympic data.
 
+ For more information, it can be found in:
+ * [Olympic Athletes 1](https://github.com/splatpugs/ntu-dsai-past/blob/main/Olympic%20Athletes%201.ipynb)
+ * [Olympic Athletes 2](https://github.com/splatpugs/ntu-dsai-past/blob/main/Olympic%20Athletes%202.ipynb)
+
 ## Data Visualisations
 In notebook 3, I did some analyses on various topics regarding Olympic medal counts, such as:
 
 1. **Total Medals Won By Country (1960 - 2018)**  
-   An overview of the total medals earned by each country from 1960 to 2016 for **Summer Olympics ONLY**.  
    ![Total Medals by Country](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/medalsforeachcountry.png)
-
-2. **Total Medals Won Other Countries VS Singapore**  
+   
+3. **Total Medals Won Other Countries VS Singapore**  
    A focused analysis of the Olympic medals won by other countries against Singapore & some additional context.  
    ![Singapore Medals](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/bubbleplotformedals.png)
-
-3. **Predicting Total Medals**  
-   Using regression analysis to predict a country's total medals can win based on historical data and identify other influencing factors.  
-   ![Regression Analysis](path/to/your/image3.png) <!-- Replace with your image path -->
-
-4. **Exploring Other Possible Factors**  
-   Investigating other factors that may influence medal counts, such as GDP and population, to provide a comprehensive understanding of the data.
-   ![GDPvMedal](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/gdpvmedalcorrelation.png)
    
-   ![PnvMedal](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/populationvmedalcorrelation.png)
+4. **Predicting Total Medals**  
+   Using regression analysis to predict a country's total medals can win based on historical data and identify other influencing factors.  
+   ![Regression Analysis](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/regressionanalysis.png)
+   
+5. **Exploring Other Possible Factors**  
+   Investigating other factors that may influence medal counts, such as GDP, population, etc.
+   ![GDPvMedal](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/gdpvmedalcorrelation.png)
 
-## Summary Of Findings
+### Quick Findings:
 
 * Top 3 countries are: USA, Russia & Germany
 * Interestingly, from 1960, Russia was leading up till 1968, when the USA overtook.
 * From 1972 onwards, Germany overlooked both countries until 1976 and 1980, but it was eventually overtaken by the USA in 1984. 
 * For the rest of the years, the USA tends to remain on top compared to other countries at the Olympics.
+* **Wealthier Nations**: The regression shows wealthier countries = better competency across events/athletic performance.
+* **Population Impact**: Population when considering factors such as **home team advantage (host country)** affects athletes performance too.
 
-## But Where is Singapore?
-In section 2 of Data Visualisations, we also further took a deep dive into Singapore:
+For more findings, refer to [Olympic Athletes 3 - Medal Counts](https://github.com/splatpugs/ntu-dsai-past/blob/main/Olympic%20Athletes%203%20-%20Medal%20Counts.ipynb)
+
+## Summary Of Key Findings on Olympics Success Factors (1960 to 2016)
+
+Olympic success appears to correlate with national economic performance. However, this correlation is limited, as the first regression model indicates. A larger pool of athletes (or contenders) is crucial for increasing the chances of winning medals. Countries like **China** and the **U.S.A.**, with their larger populations, exemplify this advantage.
+
+## What About Singapore?
+In section 2 of Data Visualisations, I also side-tracked a little bit to understand more about Singapore's performance @ Olympics till 2016:
 
 **Country Wise Analysis: Singapore**
 
@@ -91,7 +98,14 @@ Singapore has actively participated in the Summer Olympic Games since 1948, cont
 In total, Singapore has won 5 Olympic medals:
 - The first medal, a silver, was secured by **Tan Howe Liang** in lightweight weightlifting at the **1960 Summer Games**.
 - Subsequent medals included the second at the **2008 Summer Games** and two more at the **2012 Summer Games**.
-- The nation's first gold medal was achieved by **Joseph Schooling** in the men's 100-metre butterfly at the **2016 Summer Olympics**, marking the fifth medal overall for Singapore.
+- The nation's first gold medal was achieved by **Joseph Schooling** in the men's 100-metre butterfly at the **2016 Summer Olympics**.
 
+## Implications for Singapore?
+
+**Limited Athlete Pool**:
+- Given Singapore's smaller population, the pool of athletes is limited, which may impact the overall medal tally.
+  
+**Need for Strategic Development**:
+- To enhance Olympic performance, Singapore may benefit from strategies that focus on identifying and developing talent across a broader range of sports.
 
 ##### Last Updated: Thursday, 26th September 2024
