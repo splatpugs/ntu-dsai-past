@@ -6,6 +6,8 @@ This mini project/assignment aims to provide insights through data visualization
 
 ## Data Cleaning & Transformation
 Using plots, to determine the range of years to be used for analysis & visualizations:
+
+![plot of missing data](https://raw.githubusercontent.com/splatpugs/ntu-dsai-past/refs/heads/main/Pictures/plot1.png)
  
 For example, based on the plot, I conducted the analysis from 1960 onwards, due to data for height, weight and age missing from the dataset < 1960. I consider this as “bad data points”.
 
